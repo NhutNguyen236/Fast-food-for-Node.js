@@ -5,7 +5,7 @@ var app = express();
 app.set('view engine', 'jade');
 app.get('/',(req,res) =>{
     res.write("The current date and time are:" + myModule.myDateTime());
-    res.write("\nArea and Perimeter of a square with width 4 are:" + myModule.squarePlay[{4},{4}]);
+    res.write("\nArea and Perimeter of a square with width 4 are:" + myModule.squarePlay.area(4) + " " + myModule.squarePlay.perimeter(4));
     res.end();
 });
 
