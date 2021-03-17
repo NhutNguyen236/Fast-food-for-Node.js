@@ -1,5 +1,5 @@
-var myModule = require('./my_module.js');
-var express = require('express');
+const myModule = require('./my_module.js');
+const express = require('express');
 
 var app = express();
 app.set('view engine', 'jade');
@@ -12,3 +12,4 @@ app.get('/',(req,res) =>{
 var server = app.listen(8080, () =>{
     console.log("The server is now running at http://localhost:8080");
 })
+

@@ -14,6 +14,7 @@ module.exports.squarePerimeter = function(width){
 }
 */
 
+// This is module shortcut which will help you shorten the format of your module
 module.exports.squarePlay = {
     area: function(width) {
         return width * width;
@@ -23,3 +24,5 @@ module.exports.squarePlay = {
         return 4 * width;
     }
 };
+
+
